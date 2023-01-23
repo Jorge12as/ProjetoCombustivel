@@ -1,9 +1,22 @@
 *{
     margin: 0;
+    padding: 0;
 }
 body{
-    font-family: 'Courier New', Courier, monospace
-    
+    /* font-family: 'Courier New', Courier, monospace;
+    justify-content: center;  */
+    /* font-family: sans-serif;
+    color: #380B61;
+    margin-left: 7%;
+    justify-content: center; */
+
+    background-color: #F0F8FF;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #59429d;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content:center;
    
 }
 header{
@@ -23,7 +36,7 @@ main{
     align-items: center;                                                                                          
     float:left;        
     /* width: 35%; The width is 60%, by default */
-    width: 380px;
+     width: 380px;
    
 }
 .card{ 
@@ -35,8 +48,7 @@ main{
     position: relative;
     display:left;
     margin-top:2px;
-
-             
+                 
 }
 .lineInput{
     font-size: 16px;
@@ -61,6 +73,7 @@ button{
     font-weight: bold;
     transition: all ease 0.3s;   
     width: 160px;    
+  
 }
 button:hover{
     background-color: rgb(94, 29, 154);
@@ -77,8 +90,7 @@ table{
     border: 1px solid #ccc;
     width: 90%; 
     position:absolute ;
-    ;
-    
+        
 }
 table th{
     background-color: rgb(214, 214, 214);   
