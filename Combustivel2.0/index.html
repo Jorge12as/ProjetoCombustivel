@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadoa de Combustivel 2.0</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" 
+    rel="stylesheet">
+    <script src="js/scripts.js" defer></script>
+   
+</head>
+<body>
+    <div class="container">
+        <div id="calc-container">
+            <h2>Calculadora de Combustivel</h2>
+            <form id="calc-form">
+                <div class="form-control">
+                    <label for="kmInicil">Km Inicial:</label>
+                    <input type="text" 
+                        name="kmInicil"
+                        id="kmInicil"
+                        placeholder="Informe o km inicial"
+                    >
+                </div>
+                <div class="form-control">
+                    <label for="kmFim">Km Final:</label>
+                    <input type="text" 
+                        name="kmFim"
+                        id="kmFim"
+                        placeholder="Informe o km final"
+                    >
+                </div>
+                <div class="form-control">
+                    <label for="precoCombustivel">Preço do combustivel:</label>
+                    <input type="text" 
+                        name="precoCombustivel"
+                        id="precoCombustivel"
+                        placeholder="Informe o km final"
+                    >
+                </div>
+                <div class="form-control">
+                    <label for="data">Dia de trabalho:</label>
+                    <input type="text" 
+                        name="data"
+                        id="data"
+                        placeholder="Informe o dia trabalhado"
+                    >
+                </div>
+                <div class="content">
+                    <table  class="table-header">
+                        <thead>
+                            <th class="center">ID</th>
+                            <th>Km Inicial</th>
+                            <th>Km Final</th>
+                            <th>Data</th>
+                            <th class="center">Ações</th>
+                        </thead>
+                        <tbody id="tbody">
+                            <!-- Aqui será alimentado com os elementos 
+                            da tabela via javascript -->
+                        </tbody>                
+                    </table> 
+                </div>
+                <div class="action-control">
+                    <button id="calc-btn"onclick="combustivel.calcular()">Calcular</button>
+                    <button id="limpar-bnt" onclick="combustivel.cancelar()">Limpar</button>
+                </div>
+            </form>
+        </div>
+        <div id="result-container" class="hide">
+            <h2 id="h2-result">Resultado do calculo</h2>
+            <div id="div-control">
+                <p id="km-rodados">Total de km rodados: <span></span></p>
+                <p id="lts-consum">Qtd litros consumidos: <span></span></p>                          
+                <p id="vlr-a-receber">Vlr a receber: <span></span></p>
+            </div>
+            <div id="teste"></div>
+            <button id="voltar-btn">Voltar</button>
+        </div>
+    </div>
+</body>
+</html>
