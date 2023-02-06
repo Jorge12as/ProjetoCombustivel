@@ -6,7 +6,7 @@
 body{
     font-family: 'Courier New', Courier, monospace;    
     justify-content:center; 
-	background-color: #090e22;
+	background-color: #2a5a1e;
 	display: flex;   
     align-items: center;
     min-height: 50vh;
@@ -33,7 +33,7 @@ header{
 main{  
    	min-width: 350px;
     min-height: 400px;	
-    background-color: #1d1e33;
+    background-color: #085016;
     padding: 1.3rem;
     border-radius: 10px;
     margin-top: 10px;
@@ -83,7 +83,7 @@ button{
 #id-resultado{
     padding: 1px 1px;
     border: none;    
-    margin-left: 17rem;
+    margin-left: 15rem;
     max-width: 110px;
     max-height: 20px;
     margin-top: -12px;
@@ -91,7 +91,7 @@ button{
     transition: all ease 0.5s; 
 }
 #btnCalcular{
-    margin-left: 2.5rem;
+    margin-left: 2rem;
     /* margin-top: -0.2rem; */
     background-color: rgb(45, 43, 40);
 }
